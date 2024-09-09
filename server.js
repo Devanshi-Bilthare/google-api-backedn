@@ -15,6 +15,7 @@ const oauth2Client = new google.auth.OAuth2(
     'http://localhost:3000/oauth2callback' // replace with your redirect URL (e.g., http://localhost:3000/oauth2callback)
 );
 
+
 // Step 1: Generate authentication URL
 app.get('/auth', (req, res) => {
   const authUrl = oauth2Client.generateAuthUrl({
