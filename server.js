@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const oauth2Client = new google.auth.OAuth2(
     process.env.CLIENT_ID, // replace with your client ID
     process.env.CLIENT_SECRET, // replace with your client secret
-    'http://localhost:3000/oauth2callback' // replace with your redirect URL (e.g., http://localhost:3000/oauth2callback)
+    'https://your-render-app.onrender.com/oauth2callback' // replace with your redirect URL (e.g., http://localhost:3000/oauth2callback)
 );
 
 
