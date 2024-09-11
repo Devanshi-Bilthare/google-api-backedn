@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/auth",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/oauth2callback",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/create-event",
+        "dest": "/server.js"
+      }
+    ],
+    "env": {
+      "CLIENT_ID": "@client_id",
+      "CLIENT_SECRET": "@client_secret",
+      "PORT": "3000"
+    }
+  }
+  
